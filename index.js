@@ -128,7 +128,7 @@ const usericon = result.icon
 
 
 //chest data collection
-app.get("/chestdata",validateToken, async (request, response) => {
+app.get("/chestdata", async (request, response) => {
    const client = await createconnections();
    const result = await client.db("gymDatabase").collection("data").find({}).toArray();
    response.header("Access-Control-Allow-Origin","*")
