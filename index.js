@@ -109,24 +109,6 @@ const usericon = result.icon
 }
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //chest data collection
 app.get("/chestdata", async (request, response) => {
    const client = await createconnections();
